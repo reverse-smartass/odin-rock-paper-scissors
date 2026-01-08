@@ -66,3 +66,42 @@ function playGame(numberRounds){
     humanScore > computerScore ? winner += "Human" : winner += "Computer" ;
     console.log(`${winner} wins the game.`);
 }
+
+//other exercises
+
+function camelize(text){
+    let words = text.split("-");
+    let result = words[0];
+    for(let i = 1; i < words.length; i++){
+      let letters = words[i].split('');
+      letters[0] = words[i][0].toUpperCase();
+      let word = letters.join('');
+      console.log(word);
+      result += word;
+    }
+    return result;
+  }
+
+
+function filterRange(arr, min, max){
+    return arr.filter((num) => num >= min && num <=max );
+  }
+
+
+function filterRangeInPlace(arr, min, max){
+    const newArr = arr.filter((num) => num >= min && num <=max );
+    arr.splice(0, arr.length, ...newArr);
+  }
+
+function sortUp(arr){
+    return arr.sort((a,b) => a - b);
+}
+
+function sortDown(arr){
+    return arr.sort((a,b) => b - a);
+}
+
+function copySortedDown(arr){
+    const arrCopy = arr.map((num) => num);
+    return arrCopy.sort((a,b) => b - a);
+}
