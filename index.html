@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="rps.js"></script>
-
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    
+    <div class="layer">
+        <div id="matchLength">this match is of x rounds</div>
+        <div class="container">
+            <div class="numRounds">
+                <input id="nbRounds" type="number" placeholder="Number of rounds">
+                <button id="startBtn">Start game</button>
+            </div>
+            <div class="game">
+                <div class="scores">
+                    <img src="https://toppng.com/uploads/preview/erson-outline-icon-png-person-icon-png-white-11562864385wyirbbsupu.png"
+                        alt="human icon">
+                    <div id="humanScore">Human: 0</div>
+                    <div id="computerScore">Computer: 0</div>
+                    <img src="https://cdn.imgbin.com/0/4/25/robots-icon-robot-icon-7N7GkKZM.jpg" alt="computer icon">
+                </div>
+                <div class="buttons">
+                    <button id="rock">Rock</button>
+                    <button id="paper">Paper</button>
+                    <button id="scissors">Scissors</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="roundResults">roundResults</div>
+        <div id="matchResults">matchResults</div>
+    </div>
+
+
+
 </body>
+
 </html>

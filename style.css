@@ -1,0 +1,51 @@
+.container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.layer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.scores{
+    gap: 30px
+}
+
+.scores, .buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scores{
+    align-items: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+img{
+    max-height: 75px;
+    max-width: auto;
+    border-radius: 15px;
+}
+
+.numRounds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+p{
+    text-align: center;
+}
